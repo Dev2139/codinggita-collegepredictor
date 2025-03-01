@@ -1,13 +1,14 @@
 <div align="center">
 
-![Avanti fellow logo](https://i.imgur.com/t0MrYMI.png)
 
 </div>
 
-<h1 align="center">Avanti-College Predictor</h1>
+<h1 align="center">Codinggita-College Predictor</h1>
 <div align="center">
 
-**[Avanti](https://www.avantifellows.org/) provides high-school students free test preparation programs, mentorship and career services that help them place into top-tier Science and Technology colleges across India. Our students more than double their household income on graduating and escape the cycle of intergenerational poverty.**
+**[Codinggita](https://codinggita.com/) is to be at the forefront of technology education globally, shaping a future where the divide between academic theory and industry practice is seamlessly bridged, we aspire to cultivate a community where the brightest minds from both academia and the tech industry collaborate to create a curriculum that continuously evolves and Stays ahead Of market trends. Through this collaborative synergy, we aim to nurture professionals who are not only industry-ready but are also equipped to drive innovation and excellence in the technology sector. 
+
+our mission is to forge a unique educational pathway that bridges the gap between dynamic industry practices and profound academic research. We are dedicated to designing a curriculum that not only aligns with the latest technological advancements but also addresses the real-world needs of the tech industry. By bringing together industry leaders and experts. we aim to provide an enriched learning experience that empowers our participants with cutting-edge skills and insights, making them highly valued in the technology sector.**
 
 </div>
 
@@ -32,13 +33,7 @@ The College Predictor application helps students find:
    - Home State
    - City Name
 
-<div align="center">
 
-<a target="_blank" href="https://github.com/avantifellows/college-predictor/blob/8103b9c624061a34b0299915777b0a59fa47db83/LICENSE" style="background:none">
-    <img src="https://img.shields.io/badge/License-GPL--3.0-blue.svg" style="height: 22px;" />
-</a>
-
-</div>
 
 ## Getting Started
 
@@ -49,11 +44,11 @@ The College Predictor application helps students find:
 
 ### Installation
 
-1. Fork the `college-predictor` repository.
+1. Fork the `codinggita-collegepredictor` repository.
 2. Clone the forked repository to your local computer (replacing the values in `{{}}`):
    ```bash
-   git clone https://github.com/{{YOUR_GITHUB_USERNAME}}/college-predictor.git
-   cd college-predictor
+   https://github.com/Dev2139/codinggita-collegepredictor.git
+   cd codinggita-collegepredictor
    ```
 3. Install dependencies
    ```bash
@@ -61,5 +56,5 @@ The College Predictor application helps students find:
    ```
 4. Run the local development server at [http://localhost:3000](http://localhost:3000)
    ```bash
-   npm run start
+   npm run dev
    ```
