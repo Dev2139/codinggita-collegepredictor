@@ -121,13 +121,13 @@ const CollegePredictor = () => {
 
     return (
       <div className="flex flex-col justify-center items-start sm:items-center mb-4 gap-2">
-        <p className="text-sm md:text-base font-semibold text-[#9333ea]">
+        <p className="text-sm md:text-base font-semibold text-[#5d21d1]">
           Exam: {router.query.exam}
         </p>
         {examConfig.fields.map((field) => (
           <div className="flex items-center justify-center gap-2" key={field.name}>
             <label
-              className="font-semibold text-sm md:text-base text-[#9333ea]"
+              className="font-semibold text-sm md:text-base text-[#5d21d1]"
             >
               {field.label}
             </label>
@@ -144,7 +144,7 @@ const CollegePredictor = () => {
           </div>
         ))}
         <div className="flex gap-2 items-center">
-          <label className="block text-sm md:text-base font-semibold text-[#9333ea] mb-2">
+          <label className="block text-sm md:text-base font-semibold text-[#5d21d1] mb-2">
             {router.query.exam === "TNEA"
               ? "Enter Marks"
               : "Enter Category Rank"}
@@ -154,7 +154,7 @@ const CollegePredictor = () => {
             step={router.query.exam === "TNEA" ? "0.01" : "1"}
             value={queryObject.rank}
             onChange={handleRankChange}
-            className="border border-[#9333ea] rounded text-center focus:border-[#facc15] focus:ring-[#facc15]"
+            className="border border-[#5d21d1] rounded text-center focus:border-[#facc15] focus:ring-[#facc15]"
             placeholder={
               router.query.exam === "TNEA"
                 ? "Enter your marks"
@@ -173,36 +173,36 @@ const CollegePredictor = () => {
       </Head>
       <div className="flex flex-col items-center p-4 bg-white">
         <div className="flex flex-col items-center justify-center w-full sm:w-5/6 md:w-3/4 bg-[#facc15] p-6 rounded-lg shadow-lg">
-          <h1 className="text-2xl font-bold mb-4 text-center text-[#9333ea]">
+          <h1 className="text-2xl font-bold mb-4 text-center text-[#5d21d1]">
             {getConstants().TITLE}
           </h1>
           {renderQueryDetails()}
           {isLoading ? (
             <div className="flex items-center justify-center flex-col mt-2">
-              <div className="border-t-2 border-transparent border-[#9333ea] rounded-full w-8 h-8 animate-spin mb-2"></div>
+              <div className="border-t-2 border-transparent border-[#5d21d1] rounded-full w-8 h-8 animate-spin mb-2"></div>
               <p className="text-[#9333ea]">Loading your college predictions...</p>
             </div>
           ) : (
             <>
               <div className="mb-4 w-full flex flex-col justify-center items-center">
-                <label className="block text-md font-semibold text-[#9333ea] content-center mx-2">
+                <label className="block text-md font-semibold text-[#5d21d1] content-center mx-2">
                   Search: 🔍
                 </label>
                 <input
                   onChange={searchFun}
                   placeholder="Name / State / Program"
-                  className="border border-[#9333ea] rounded text-center h-fit p-1 sm:w-5/12 w-3/4 focus:border-[#facc15] focus:ring-[#facc15]"
+                  className="border border-[#5d21d1] rounded text-center h-fit p-1 sm:w-5/12 w-3/4 focus:border-[#facc15] focus:ring-[#facc15]"
                 />
                 {error && <p className="text-red-600 mt-2">{error}</p>}
               </div>
               {filteredData.length === 0 ? (
-                <div className="text-center text-[#9333ea]">
+                <div className="text-center text-[#5d21d1]">
                   <p>No colleges found matching your criteria.</p>
                   <p>Try adjusting your rank or other parameters.</p>
                 </div>
               ) : (
                 <div className="w-full overflow-x-auto">
-                  <h3 className="text-lg md:text-xl mb-4 text-center font-bold text-[#9333ea]">
+                  <h3 className="text-lg md:text-xl mb-4 text-center font-bold text-[#5d21d1]">
                     Predicted colleges and courses for you:
                   </h3>
                   <PredictedCollegeTables

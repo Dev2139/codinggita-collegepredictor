@@ -67,13 +67,13 @@ const ScholarshipPage = () => {
                     gtag('config', 'G-FHGVRT52L7');
                     `}
           </Script>
-          <h1 className="text-2xl md:text-3xl font-bold mb-6 text-[#9333ea]">
+          <h1 className="text-2xl md:text-3xl font-bold mb-6 text-[#5d21d1]">
             {scholarshipConfig.name}
           </h1>
           <div className="flex flex-col sm:flex-row flex-wrap w-full justify-center items-center">
             {scholarshipConfig.fields.map((field) => (
               <div key={field.name} className="my-4 w-full sm:w-3/4">
-                <label className="block text-md font-semibold text-[#9333ea] mb-2 -translate-x-4">
+                <label className="block text-md font-semibold text-[#5d21d1] mb-2 -translate-x-4">
                   {field.label}
                 </label>
                 <Dropdown
@@ -87,7 +87,7 @@ const ScholarshipPage = () => {
                 />
                 {field.helperText &&
                   field.helperText.map((text, index) => (
-                    <p key={index} className="text-sm text-[#9333ea] mt-1">
+                    <p key={index} className="text-sm text-[#5d21d1] mt-1">
                       {text}
                     </p>
                   ))}
@@ -96,7 +96,7 @@ const ScholarshipPage = () => {
           </div>
           <button
             className={
-              "mt-6 px-8 py-2.5 rounded-lg bg-[#9333ea] text-white cursor-pointer hover:bg-[#facc15] hover:text-[#9333ea] active:bg-[#9333ea] disabled:bg-gray-300 disabled:cursor-not-allowed -translate-x-4"
+              "mt-6 px-8 py-2.5 rounded-lg bg-[#5d21d1] text-white cursor-pointer hover:bg-[#facc15] hover:text-[#5d21d1] active:bg-[#5d21d1] disabled:bg-gray-300 disabled:cursor-not-allowed -translate-x-4"
             }
             onClick={handleSubmit}
             disabled={isSubmitDisabled}
@@ -104,7 +104,7 @@ const ScholarshipPage = () => {
             Submit
           </button>
           {isSubmitDisabled && (
-            <p className="text-[#9333ea] text-sm mt-2 -translate-x-4">
+            <p className="text-[#5d21d1] text-sm mt-2 -translate-x-4">
               Please fill all the fields before submitting!
             </p>
           )}

@@ -116,7 +116,7 @@ const ScholarshipFinder = () => {
             key={field.name}
             className="flex items-center justify-center gap-2"
           >
-            <label className="font-semibold text-sm md:text-base text-[#9333ea]">
+            <label className="font-semibold text-sm md:text-base text-[#5d21d1]">
               {field.label}
             </label>
             <Dropdown
@@ -142,35 +142,35 @@ const ScholarshipFinder = () => {
       </Head>
       <div className="flex flex-col items-center p-4 bg-white">
         <div className="flex flex-col items-center justify-center w-full sm:w-5/6 md:w-3/4 bg-[#facc15] p-6 rounded-lg shadow-lg">
-          <h1 className="text-2xl font-bold mb-4 text-center text-[#9333ea]">
+          <h1 className="text-2xl font-bold mb-4 text-center text-[#5d21d1]">
             {getConstants().SCHOLARSHIP_TITLE}
           </h1>
           {renderQueryDetails()}
           {isLoading ? (
             <div className="flex items-center justify-center flex-col mt-2">
-              <div className="border-t-2 border-transparent border-[#9333ea] rounded-full w-8 h-8 animate-spin mb-2"></div>
-              <p className="text-[#9333ea]">Loading scholarships...</p>
+              <div className="border-t-2 border-transparent border-[#5d21d1] rounded-full w-8 h-8 animate-spin mb-2"></div>
+              <p className="text-[#5d21d1]">Loading scholarships...</p>
             </div>
           ) : error ? (
             <div className="text-[#9333ea] text-center">{error}</div>
           ) : filteredData.length === 0 ? (
-            <div className="text-center text-[#9333ea]">
+            <div className="text-center text-[#5d21d1]">
               <p>No scholarships found matching your criteria.</p>
               <p>Try adjusting your parameters.</p>
             </div>
           ) : (
             <>
               <div className="mb-4 w-full flex flex-col justify-center items-center">
-                <label className="block text-md font-semibold text-[#9333ea] content-center mx-2">
+                <label className="block text-md font-semibold text-[#5d21d1] content-center mx-2">
                   Search: 🔍
                 </label>
                 <input
                   onChange={searchFun}
                   placeholder="Scholarship Name"
-                  className="border border-[#9333ea] rounded text-center h-fit p-1 sm:w-5/12 w-3/4 focus:border-[#facc15] focus:ring-[#facc15]"
+                  className="border border-[#5d21d1] rounded text-center h-fit p-1 sm:w-5/12 w-3/4 focus:border-[#facc15] focus:ring-[#facc15]"
                 />
               </div>
-              <h3 className="text-lg md:text-xl mb-4 text-center font-bold text-[#9333ea]">
+              <h3 className="text-lg md:text-xl mb-4 text-center font-bold text-[#5d21d1]">
                 Scholarships matching your criteria:
               </h3>
               <div className="w-full overflow-x-auto">

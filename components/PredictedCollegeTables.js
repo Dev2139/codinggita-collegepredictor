@@ -6,9 +6,9 @@ const PredictedCollegesTable = ({ data = [], exam = "" }) => {
   const commonTableClass =
     "w-full mx-auto border-collapse text-sm sm:text-base";
   const commonHeaderClass =
-    "bg-[#9333ea] font-bold text-center text-xs sm:text-sm md:text-base text-white"; // Purple header with white text
+    "bg-[#5d21d1] font-bold text-center text-xs sm:text-sm md:text-base text-white"; 
   const commonCellClass =
-    "p-2 border border-[#9333ea] text-center text-xs sm:text-sm md:text-base"; // Purple borders
+    "p-2 border border-[#9333ea] text-center text-xs sm:text-sm md:text-base";
 
   const examColumnMapping = {
     TNEA: [

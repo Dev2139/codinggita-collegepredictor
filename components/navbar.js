@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
 
-// Renders Navbar as General Component
+
 const Navbar = ({ item1, item2 }) => {
   const pathname = usePathname();
   return (
@@ -17,14 +17,14 @@ const Navbar = ({ item1, item2 }) => {
           />
         </div>
       </div>
-      <div className="bg-[#9333ea] text-xl w-full h-16 flex items-center justify-center text-white">
+      <div className="bg-[#5d21d1] text-xl w-full h-16 flex items-center justify-center text-white">
         <div className="flex text-white text-lg gap-10">
           <Link
             href="/"
             className={`link ${
               pathname === "/"
-                ? "font-bold bg-[#facc15] text-[#9333ea] px-2 rounded" // Yellow bg, purple text when active
-                : "hover:bg-[#facc15] hover:text-[#9333ea] px-2 rounded cursor-pointer" // Yellow hover
+                ? "font-bold bg-[#facc15] text-[#5d21d1] px-2 rounded" // Yellow bg, purple text when active
+                : "hover:bg-[#facc15] hover:text-[#5d21d1] px-2 rounded cursor-pointer" // Yellow hover
             }`}
           >
             {item1}
@@ -33,19 +33,19 @@ const Navbar = ({ item1, item2 }) => {
             href="/scholarships"
             className={`link ${
               pathname === "/scholarships"
-                ? "font-bold bg-[#facc15] text-[#9333ea] px-2 rounded" // Yellow bg, purple text when active
-                : "hover:bg-[#facc15] hover:text-[#9333ea] px-2 rounded cursor-pointer" // Yellow hover
+                ? "font-bold bg-[#facc15] text-[#5d21d1] px-2 rounded" // Yellow bg, purple text when active
+                : "hover:bg-[#facc15] hover:text-[#5d21d1] px-2 rounded cursor-pointer" // Yellow hover
             }`}
           >
             {item2}
           </Link>
         </div>
       </div>
-      <div className="bg-white py-2 text-center text-sm text-[#9333ea]">
+      <div className="bg-white py-2 text-center text-sm text-[#5d21d1]">
         <p>
           Developed by{" "}
-          <span className="font-semibold">Codinggita Team</span> | Managed by{" "}
-          <span className="font-semibold">Codinggita Community</span>
+          <span className="font-semibold">Dev Patel</span> | Managed by{" "}
+          <span className="font-semibold">Codinggita Team</span>
         </p>
       </div>
     </div>
