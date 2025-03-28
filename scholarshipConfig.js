@@ -4,7 +4,7 @@ export const scholarshipConfig = {
   name: "Scholarship Finder",
   fields: [
     {
-      name: "status",
+      name: "status",   
       label: "Enter Scholarship Status",
       options: [
         { value: "Open", label: "Open" },

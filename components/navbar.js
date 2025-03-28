@@ -44,8 +44,23 @@ const Navbar = ({ item1, item2 }) => {
       <div className="bg-white py-2 text-center text-sm text-[#5d21d1]">
         <p>
           Developed by{" "}
-          <span className="font-semibold">Dev Patel</span> | Managed by{" "}
-          <span className="font-semibold">Codinggita Team</span>
+          <a
+            href="https://devpatel-portfolioandcontacts.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold hover:underline"
+          >
+            Dev Patel
+          </a>{" "}
+          | Managed by{" "}
+          <a
+            href="https://codinggita.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold hover:underline"
+          >
+            Codinggita Team
+          </a>
         </p>
       </div>
     </div>

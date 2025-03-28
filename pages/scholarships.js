@@ -50,7 +50,7 @@ const ScholarshipPage = () => {
   return (
     <>
       <Head>
-        <title>Scholarships - Home</title>
+        <title>Codinggita-Scholarships - Home</title>
       </Head>
 
       <div className="flex flex-col justify-start items-center w-full mt-8 pb-10 bg-white">
